@@ -21,6 +21,7 @@ body {
     list-style-type: none;
     margin-left: 30px;
     transition: transform 0.3s ease;
+    cursor:cell;
 }
 
 .navbar_logo:hover {
@@ -43,7 +44,9 @@ body {
     font-weight:500;  
     font-size: 17px;
     text-decoration: none;
+    transition:0.1s;
 }
+
 .links a:hover {
     color: aliceblue;
 }
@@ -66,4 +69,37 @@ body {
     font-size: 16px;
     color: rgb(172, 172, 172);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.social_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    font-size: 18px;
+    list-style-type: none;
+    cursor: pointer;
+    gap: 8px;
+
+}
+
+.social_links i:hover{
+    transition: 0.1s ease;
+    transform: scale(1.2);
+}
+#version{
+    display: flex;
+    cursor: pointer ;
+    color: rgb(224, 223, 223);
+    margin-left: 30px;
+    border: 2px solid black;
+    border-bottom: none;
+    border-top: none;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+#version:hover {
+    color: rgb(224, 223, 223);
 }
