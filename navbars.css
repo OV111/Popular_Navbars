@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Bootstrap Navbar */
 .bootstrap_navbar {
     display: flex;
     justify-content: start;
@@ -23,11 +23,9 @@ body {
     transition: transform 0.3s ease;
     cursor:cell;
 }
-
 .navbar_logo:hover {
     transform: rotate(-8deg) scale(1.1);
 }
-
 .navbar_links {
     display: flex;
     justify-content: center;
@@ -46,11 +44,9 @@ body {
     text-decoration: none;
     transition:0.1s;
 }
-
 .links a:hover {
     color: aliceblue;
 }
-
 
 .bootstrap_navbar input {
     display:flex;
@@ -60,7 +56,7 @@ body {
     height: 30px;
     width: 220px;
     background-color:none;
-    border: 2px solid #a2a2a2;
+    border: 2.5px solid #a2a2a2;
     border-radius: 10px;
 }
 .bootstrap_navbar input::placeholder {
@@ -68,7 +64,10 @@ body {
     padding-left: 20px;
     font-size: 16px;
     color: rgb(172, 172, 172);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+.bootstrap_navbar input:focus::placeholder {
+    color:transparent;
 }
 
 .social_links {
@@ -80,7 +79,6 @@ body {
     list-style-type: none;
     cursor: pointer;
     gap: 8px;
-
 }
 .social_links i:hover{
     transition: 0.1s ease;
@@ -107,11 +105,10 @@ body {
     justify-content: start;
     align-items: space-between;
     margin-top: 0px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-bottom: 1px solid rgb(203, 200, 200);
     height: 60px;
 }
-
 .linkedin_navbar_links {
     display: flex;
     align-items: center;
@@ -119,7 +116,6 @@ body {
     list-style-type:none;    
     gap:0px;
 }
-
 .linkedin_navbar_logo img {
     display: flex;
     justify-content: center;
@@ -130,24 +126,62 @@ body {
     height: 60px;
     cursor: pointer;
 }
-
-
-#searchbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.linkedin_navbar_links input {
+    height: 35px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(243, 243, 243);
+    /* transition: width 0.3s ease; */
 }
-#searchbar i {
-    margin-left: 20px;
+.linkedin_navbar_links input::placeholder {
+    text-align: start;
+    padding-left:10px;
 }
-
-
+.linkedin_navbar_links input:focus::placeholder {
+    color:transparent;
+}
 .linkedin_navbar_links2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 200px;
+    margin-left: 150px;
     list-style-type: none;
     gap: 40px;
+    cursor: pointer;
+}
+.linkedin_navbar_links2 i {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    color: rgb(100, 98, 98);
+}
+.linkedin_navbar_links2 li {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+    font-size: 16px;
+    color: #acacac;
+}
+.linkedin_navbar_links2 li:hover,
+.linkedin_navbar_links2 li:hover i {
+    color: black;
+    transition: 0.2s ease;
+}
+#B {
+    border-left: 1px solid grey;
+    padding-left: 10px;
+}
+#C{
+    width:100px; 
+    font-size: 13px;
+}
+#C a{
+    color: darkgoldenrod;
+}
+#C a:hover {
+    color: black;
+    transition: 0.2s ease;
 }
