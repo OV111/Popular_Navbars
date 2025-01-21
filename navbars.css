@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -184,4 +187,62 @@ body {
 #C a:hover {
     color: black;
     transition: 0.2s ease;
+}
+
+/* Github Navbar */
+
+.github_navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(72, 72, 72);
+    background-color: rgb(72, 72, 72);
+    height: 80px;                                     /*//////////////x`*/
+}
+.github_navbar_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap:18px;
+}
+.github_navbar_links li .fa-bars {
+    font-size: 25px;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+}
+.github_navbar_links li .fa-bars:hover {
+    background-color: rgb(89, 89, 89);
+    transition: 0.3s ease;
+}
+.github_navbar_links li .fa-github{
+    font-size: 29px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+li .fa-github:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+#username {
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+}#username:hover{
+   background-color: rgb(89, 89, 89);
+   transition: 0.3s ease;
+}
+
+
+
+.github_navbar_links2 {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+
+    
 }
