@@ -197,18 +197,19 @@ body {
     align-items: center;
     border: 2px solid rgb(72, 72, 72);
     background-color: rgb(72, 72, 72);
-    height: 80px;                                     /*//////////////x`*/
+    height: 50px;                                     /*//////////////x`*/
 }
 .github_navbar_links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    margin-top: 20px;
     gap:18px;
 }
 .github_navbar_links li .fa-bars {
-    font-size: 25px;
-    border-radius: 4px;
+    font-size: 23px;
+    border-radius: 6px;
     padding: 4px;
     cursor: pointer;
 }
@@ -230,7 +231,7 @@ li .fa-github:hover {
     padding: 6px;
     font-size: 16px;
     border: none;
-    border-radius: 4px; 
+    border-radius: 6px; 
     cursor: pointer;
 }#username:hover{
    background-color: rgb(89, 89, 89);
@@ -245,4 +246,23 @@ li .fa-github:hover {
     /* justify-content: space-between; */
 
     
+}
+
+
+.github_navbar_links3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+    gap: 20px;
+}
+.github_navbar_links3 li {
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+}
+.github_navbar_links3 li:hover {
+    background-color:rgb(89, 89, 89);
+    transition:0.3s ease-out ;
 }
