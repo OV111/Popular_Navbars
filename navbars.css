@@ -34,7 +34,6 @@ body {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    /* margin-left: 20px; */
 }
 .links {
     margin-left: 20px;
@@ -50,7 +49,6 @@ body {
 .links a:hover {
     color: aliceblue;
 }
-
 .bootstrap_navbar input {
     display:flex;
     justify-content: center;
@@ -72,7 +70,6 @@ body {
 .bootstrap_navbar input:focus::placeholder {
     color:transparent;
 }
-
 .social_links {
     display: flex;
     justify-content: center;
@@ -136,7 +133,6 @@ body {
     border: none;
     border-radius: 4px;
     background-color: rgb(243, 243, 243);
-    /* transition: width 0.3s ease; */
 }
 .linkedin_navbar_links input::placeholder {
     text-align: start;
@@ -173,18 +169,18 @@ body {
     color: black;
     transition: 0.2s ease;
 }
-#B {
+#Business {
     border-left: 1px solid grey;
     padding-left: 10px;
 }
-#C{
+#text{
     width:100px; 
     font-size: 13px;
 }
-#C a{
+#text a{
     color: darkgoldenrod;
 }
-#C a:hover {
+#text a:hover {
     color: black;
     transition: 0.2s ease;
 }
@@ -197,7 +193,7 @@ body {
     align-items: center;
     border: 2px solid rgb(72, 72, 72);
     background-color: rgb(72, 72, 72);
-    height: 50px;                                     /*//////////////x`*/
+    height: 50px;                                   
 }
 .github_navbar_links {
     display: flex;
@@ -240,7 +236,7 @@ li .fa-github:hover {
 .github_navbar_links2 {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: center;
     list-style-type: none;
     margin-right: 15px;    
     gap: 12px;
@@ -274,9 +270,7 @@ li .fa-github:hover {
     background-color: rgb(89, 89, 89);
     transition: 0.3s ease-out;
 }
-#line {
-    cursor: none;
-}
+#line { cursor: none; }
 #plus {
     font-size: 24px;
     border: 1px solid black;
@@ -360,7 +354,7 @@ li .fa-github:hover {
 .reddit_navbar img:hover {
     animation: rotateAnimation 0.6s infinite alternate;
 }
-@keyframes rotateAnimation {       /*////////////////////////////////*/
+@keyframes rotateAnimation {     
     0% {
         transform: rotate(-4deg);
     }
@@ -413,4 +407,204 @@ li .fa-github:hover {
 #create {
     font-size: 18px;
     padding: 0px;
+}
+/* Responsive Bootstrap */
+@media (max-width:767px) {
+    .bootstrap_navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        height: 100px;
+        width: auto;
+    }
+    .navbar_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar_links .navbar_logo {
+        position: relative;
+        right:60px;
+        width: 30px;
+        height: 30px;
+    }
+    .navbar_links .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 40px;
+        width: 100%;
+        left: 40px;
+    }
+    .social_links .links {
+        position: relative;
+        width: 100%;
+        right: 100px;
+        bottom:70px
+    }
+    .bootstrap_navbar input {
+        display: none;
+    }
+}
+@media (min-width:767px) and (max-width:1024px) {
+    .bootstrap_navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        height: 100px;
+    }
+    .navbar_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar_links .navbar_logo {
+        position: relative;
+        right:60px;
+        width: 30px;
+        height: 30px;
+    }
+    .navbar_links .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 40px;
+        width: 100%;
+        left: 150px;
+    }
+    .bootstrap_navbar input {
+        display: none;
+    }
+    .social_links .links {
+        position: relative;
+        width: 100%;
+        left: 350px;
+        bottom:70px
+    }
+}
+/* Responsive LinkedIn */
+@media (max-width:767px) {
+    .linkedin_navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .linkedin_navbar_links img {
+        position: relative;
+        right: 110px;
+        width:40px;
+        height: 40px;
+    }
+    .linkedin_navbar_links input {
+        display: none;
+    }
+    .linkedin_navbar_links2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .linkedin_navbar_links2 li {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        right: 260px;
+        font-size: 12px;
+    }
+    #text {
+        position: relative;
+        right: 290px;
+        font-size: 10px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1024px){
+    .linkedin_navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .linkedin_navbar_links img {
+        position: relative;
+        right: 110px;
+        width:40px;
+        height: 40px;
+    }
+    .linkedin_navbar_links input {
+        display: none;
+    }
+    .linkedin_navbar_links2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .linkedin_navbar_links2 li {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        right: 220px;
+        font-size: 12px;
+    }
+    #text {
+        position: relative;
+        right: 200px;
+        font-size: 10px;
+    }
+}
+/* Responsive Reddit */
+@media (max-width:767px) {
+   .reddit_navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+   .reddit_navbar img {
+        position: relative;
+        left: -150px;
+        width: 80px;
+        height: 40px;
+   }
+   .reddit_navbar_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 150px;
+   }
+   .reddit_navbar input {
+    display: none;
+   }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .reddit_navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+   .reddit_navbar img {
+        position: relative;
+        right: 300px;
+        width: 80px;
+        height: 40px;
+   }
+   .reddit_navbar_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 150px;
+   }
+   .reddit_navbar input {
+    display: none;
+   }
 }
