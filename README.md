@@ -13,11 +13,8 @@ This project demonstrates the implementation of navigation bars from popular web
   git clone https://github.com/OV111/Popular_Navbars.git
   cd your-repo-name
 ```
-## Image
+## Image 🖼️
 ![Image](https://github.com/user-attachments/assets/08ceeb41-e579-41d9-a383-38722df0f024)
 
-
-
-
-## License
+## License 📜
 [MIT](https://choosealicense.com/licenses/mit/)
