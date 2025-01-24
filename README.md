@@ -6,6 +6,7 @@ This project demonstrates the implementation of navigation bars from popular web
 
 ## Features
 **Responsive Navigation Bars** 📱:
+  - Implemented similar hover effects and animations like the originals (scale, rotate, color transitions).
 
 
 
